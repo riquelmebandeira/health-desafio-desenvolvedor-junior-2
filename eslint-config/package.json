@@ -1,0 +1,26 @@
+{
+  "name": "@rb/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./.eslintrc.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riquelmebandeira/health-desafio-desenvolvedor-junior-2.git"
+  },
+  "author": "Riquelme Bandeira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riquelmebandeira/health-desafio-desenvolvedor-junior-2/issues"
+  },
+  "homepage": "https://github.com/riquelmebandeira/health-desafio-desenvolvedor-junior-2#readme",
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.31.11"
+  }
+}

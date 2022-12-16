@@ -1,0 +1,25 @@
+{
+  "name": "health-desafio-desenvolvedor-junior-2",
+  "version": "1.0.0",
+  "description": "![SoftMakers](https://www.softmakers.com.br/assets/img/logotipo14xxhdpi.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riquelmebandeira/health-desafio-desenvolvedor-junior-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riquelmebandeira/health-desafio-desenvolvedor-junior-2/issues"
+  },
+  "homepage": "https://github.com/riquelmebandeira/health-desafio-desenvolvedor-junior-2#readme",
+  "workspaces": [
+    "server",
+    "web",
+    "eslint-config"
+  ]
+}
