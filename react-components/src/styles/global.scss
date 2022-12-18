@@ -1,0 +1,53 @@
+@use './colors';
+@use './mixins';
+@use './utilities';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1 rem = 10px;
+
+  @include mixins.respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px
+  }
+
+  @include mixins.respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px
+  }
+
+  @include mixins.respond(big-desktop) {
+    font-size: 75%; //1rem = 12
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-gray-12);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sansita', sans-serif;
+}
+
+::selection {
+  background-color: var(--color-purple-4);
+  color: var(--color-gray-1);
+}
