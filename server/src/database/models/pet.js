@@ -18,14 +18,16 @@ module.exports = (sequelize, DataTypes) => {
   Pet.init(
     {
       name: DataTypes.STRING,
-      age: DataTypes.INTEGER,
+      age: DataTypes.FLOAT,
       type: DataTypes.STRING,
       breed: DataTypes.STRING,
+      picture: DataTypes.STRING,
       ownerId: DataTypes.INTEGER
     },
     {
       sequelize,
-      modelName: 'Pet'
+      modelName: 'Pet',
+      timestamps: false
     }
   )
   return Pet

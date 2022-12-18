@@ -14,7 +14,7 @@ module.exports = {
         allowNull: false
       },
       age: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
         allowNull: false
       },
       type: {
@@ -25,6 +25,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
+      picture: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
       ownerId: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -34,11 +38,9 @@ module.exports = {
         }
       },
       createdAt: {
-        allowNull: false,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
         type: Sequelize.DATE
       }
     })
