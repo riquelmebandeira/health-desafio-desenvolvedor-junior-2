@@ -1,9 +1,7 @@
-import express from 'express'
-import cors from 'cors'
+const app = require('./app')
 
-const app = express()
+const PORT = process.env.PORT || 3001
 
-app.use(cors())
-app.use(express.json())
-
-app.listen(3001, () => console.log('Server online on port 3001!'))
+app.listen(PORT, () => {
+  console.log(`Server online at port ${PORT}`)
+})
