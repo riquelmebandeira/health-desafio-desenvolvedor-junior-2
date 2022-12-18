@@ -8,7 +8,11 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      this.belongsTo(models.Owner, {
+        foreignKey: 'ownerId',
+        as: 'Owner',
+        onDelete: 'CASCADE'
+      })
     }
   }
   Pet.init(
@@ -16,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
       name: DataTypes.STRING,
       age: DataTypes.INTEGER,
       type: DataTypes.STRING,
-      breed: DataTypes.STRING
+      breed: DataTypes.STRING,
+      ownerId: DataTypes.INTEGER
     },
     {
       sequelize,
