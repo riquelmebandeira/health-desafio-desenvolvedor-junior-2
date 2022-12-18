@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server .",
-    "build": "webpack ."
+    "build": "webpack .",
+    "build:watch": "webpack . -w"
   },
   "repository": {
     "type": "git",
