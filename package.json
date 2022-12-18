@@ -19,7 +19,7 @@
   "homepage": "https://github.com/riquelmebandeira/health-desafio-desenvolvedor-junior-2#readme",
   "workspaces": [
     "server",
-    "web",
-    "eslint-config"
+    "eslint-config",
+    "react-components"
   ]
 }
