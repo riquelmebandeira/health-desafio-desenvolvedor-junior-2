@@ -1,0 +1,31 @@
+.card {
+  width: 24rem;
+  height: 32.3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 6px;
+
+  &__picture {
+    width: 13.8rem;
+    height: 13.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-black-4);
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    color: var(--color-black-11);
+  }
+
+  &__details {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-black-8);
+  }
+
+  button {
+    width: 100%;
+  }
+}
