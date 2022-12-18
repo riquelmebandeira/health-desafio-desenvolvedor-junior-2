@@ -23,7 +23,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: 'Owner'
+      modelName: 'Owner',
+      timestamps: false
     }
   )
   return Owner
