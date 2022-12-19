@@ -6,7 +6,7 @@ module.exports = {
   entry: './index.js',
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, '../server/dist'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
     library: 'components'
   },
