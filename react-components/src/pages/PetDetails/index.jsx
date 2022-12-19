@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Header from '../../components/Header'
 import './styles.scss'
+import Button from '../../components/Button'
 
 const PetDetails = (props) => {
   const {id, age, name, type, breed, picture, owner} = props.petDetails
@@ -49,7 +50,7 @@ const PetDetails = (props) => {
           </div>
         </section>
       </div>
-      <button className="button" onClick={() => handleDelete()}>Apagar pet</button>
+      <Button innerText="Apagar pet" onClick={handleDelete} />
     </main>
    </>
   )
