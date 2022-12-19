@@ -1,7 +1,8 @@
 .pet-details {
   display: flex;
-  margin: 9rem auto;
-  width: 116rem;
+  margin: auto;
+  padding: 9rem 1rem;
+  max-width: 116rem;
 
   &__picture {
     width: 26rem;
@@ -59,5 +60,16 @@
 
   & + & {
     margin-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 33.1em) {
+  .pet-details {
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+      margin-left: 0;
+    }
   }
 }
