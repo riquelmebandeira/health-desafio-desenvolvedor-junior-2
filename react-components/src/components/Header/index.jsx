@@ -4,7 +4,7 @@ import './styles.scss'
 const Header = () => {
  return (
    <header className="header">
-     <h1 className="header__logo">TechCare</h1>
+     <a href="/pets" className="header__logo">TechCare</a>
      <button className="button button--ghost">Sair</button>
    </header>
  )
