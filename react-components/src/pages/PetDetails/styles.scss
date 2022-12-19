@@ -19,6 +19,7 @@
 .pet-info {
   &__name {
     font-size: 4.8rem;
+    color: var(--color-black-11);
   }
 
   &__list {
@@ -46,14 +47,14 @@
     display: block;
     font-size: 1.6rem;
     font-weight: 600;
-    color: var(--color-black-9);
+    color: var(--color-black-11);
     margin-bottom: 0.5rem;
   }
 
   &__value {
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--color-black-7);
+    color: var(--color-black-9);
   }
 
   & + & {
