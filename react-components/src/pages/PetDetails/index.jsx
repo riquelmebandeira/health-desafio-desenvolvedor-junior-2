@@ -4,7 +4,18 @@ import Header from '../../components/Header'
 import './styles.scss'
 
 const PetDetails = (props) => {
-  const {age, name, type, breed, picture, owner} = props.petDetails
+  const {id, age, name, type, breed, picture, owner} = props.petDetails
+
+  const handleDelete = async () => {
+    try {
+      const response = await fetch(`/pets/${id}`, { method: 'DELETE' })
+      if (response.ok) {
+        document.location.href = '/pets'
+      }
+    } catch (error) {
+      /** */
+    }
+  }
 
  return (
    <>
@@ -38,6 +49,7 @@ const PetDetails = (props) => {
           </div>
         </section>
       </div>
+      <button className="button" onClick={() => handleDelete()}>Apagar pet</button>
     </main>
    </>
   )

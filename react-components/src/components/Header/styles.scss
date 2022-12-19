@@ -18,14 +18,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-primary-6);
+  color: var(--color-black-1);
+  border: none;
   height: 3.7rem;
   width: 12rem;
   border-radius: 6px;
   font-size: 1.6rem;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
   cursor: pointer;
-  color: var(--color-primary-6);
 
   &:disabled {
     cursor: not-allowed;
@@ -33,6 +36,7 @@
 
   &--ghost {
     background: none;
+    color: var(--color-primary-6);
     border: 2px solid var(--color-primary-6);
   }
 }

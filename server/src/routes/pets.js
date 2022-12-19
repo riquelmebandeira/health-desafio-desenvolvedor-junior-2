@@ -16,4 +16,14 @@ router.get('/pets/:id', async (req, res) => {
   res.render('details', { petDetails })
 })
 
+router.delete('/pets/:id', async (req, res) => {
+  const { id } = req.params
+  const pet = await Pet.findOne({ where: { id } })
+  if (!pet) {
+    return res.status(404).json({ message: 'Este pet não existe.' })
+  }
+  pet.destroy()
+  return res.status(200).json({ message: 'Pet deletado com sucesso.' })
+})
+
 module.exports = router
