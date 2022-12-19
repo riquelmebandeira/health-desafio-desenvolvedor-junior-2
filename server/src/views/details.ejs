@@ -34,8 +34,8 @@
       <div id="root"></div>
     </div>
     <script src="/bundle.js"></script>
-    <script>
-      components.renderHome('#root', {list: <%-JSON.stringify(pets)%>} )
+    <script defer>
+      components.renderPetDetails('#root', {petDetails: <%-JSON.stringify(petDetails)%>} )
     </script>
   </body>
 </html>

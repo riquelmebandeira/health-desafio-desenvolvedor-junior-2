@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import './styles.scss'
 
 const Card = (props) => {
-  const {name, type, breed, picture} = props
+  const {id, name, type, breed, picture} = props
 
  return (
   <div className='card'>
     <img className='card__picture mb-tiny' src={picture} alt={name} />
     <h4 className="card__title mb-small">{name}</h4>
     <p className="card__details mb-medium">{`${type} • ${breed}`}</p>
-    <button className="button button--ghost">Ver detalhes</button>
+    <a href={`pets/${id}`} className="button button--ghost">Ver detalhes</a>
   </div>
  )
 }
