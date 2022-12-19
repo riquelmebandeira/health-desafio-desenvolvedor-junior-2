@@ -1,3 +1,6 @@
 {
-  "extends": ["standard", "prettier", "plugin:react/recommended"]
+  "extends": ["standard", "prettier", "plugin:react/recommended"],
+  "rules": {
+    "react/no-render-return-value": "off"
+  }
 }
